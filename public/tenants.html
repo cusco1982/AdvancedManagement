@@ -55,6 +55,10 @@
             <li class="nav-item">
               <a class="nav-link" href="/contact">CONTACT</a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/tenants">LOGIN</a>
+            </li>
             
           </ul>
       </nav>
@@ -77,29 +81,34 @@
         <div class="col-md-4 col3 animated fadeInUp slow delay">
             <div class="jumbotron tent1">
                 <form action="/login" method="POST">
-                  <div>
-                      <label for="email"> Email </label>
-                      <input type = "email" id = "email" name = "email"
+                  <div class="loginput">
+                      <label for="email">Your Email Address</label>
+                      <input class="form-control" type="email" id="email" name="email"
                       required>
                   
                   </div>
-                  <div>
-                      <label for="password"> Password </label>
-                      <input type = "password" id = "password" name = "password"
+                 
+                  <div class="loginput">
+                      <label for="password">Password</label>
+                      <input class="form-control" type="password" id="password" name="password"
                       required>
                       
                   </div>
-              
-                  <button type ="submit"> Login </button>
+                  <br/>
+                  
+                  <div>
+            
+                  <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 10px;">Login Now</button>
+                  </div>
               </form>
               
-              <a href= "/register">Register</a>
+              <a style="color:blue" href="/register">Create an Account</a>
                 <!-- <i class="fas fa-desktop"></i>
                 <br>
                 <br>
                 <h4>Online Portal LogIn</h4>
                 <br>
-                <a href="/login"><button type="button" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 0px;">Login Now</button></a>
+                
                 <br>
                 <h5><a style="color:blue;" href="">Or Create an account</a></h5> -->
             </div>

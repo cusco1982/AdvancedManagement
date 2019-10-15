@@ -96,6 +96,8 @@ th {
   -o-border-radius: 10px;
   height: 350px;
   border: 1px solid black;
+  padding:20px;
+  
 }
 
 .tent2 {
@@ -111,6 +113,11 @@ th {
   margin-left: 10px;
   margin-top: 40px;
   box-shadow: 5px 5px 10px black;
+}
+.loginput {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5px;
 }
 
 .contmain {
@@ -271,12 +278,6 @@ th {
   line-height: 20px;
 }
 
-#logoutbutton {
-  position:fixed;
-  right:0;
-  bottom:0;
-}
-
 @media only screen and (max-width: 450px) {
 
   .col-md-2 {
@@ -331,5 +332,11 @@ th {
     padding-top: 10px;
     
   } 
+
+/* #logoutbutton {
+  position:relative;
+  right:0;
+  bottom:0;
+} */
 
 }

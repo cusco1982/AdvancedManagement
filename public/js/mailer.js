@@ -9,15 +9,13 @@ $("#sendmail").click(function(){
   var message = document.getElementById("message");
   if (fname.checkValidity() && lname.checkValidity() && email.checkValidity() && phone.checkValidity() && message.checkValidity()) {
   
-    console.log(mail)
+    console.log(mail, "ha")
   $.post("/api/send",
     JSON.stringify(mail), 
 function(data) {
-    console.log(data);
+    console.log(data, "qu");
     
   });
   } 
   
-
-
 });
