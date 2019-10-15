@@ -74,12 +74,12 @@ app.post('/login', checkNotAuthenticated, (req, res, next) => {
   
       if(passportUser) {
         // console.log("passUser: ", passportUser);
-        if (req.body.email === "cusco2891@gmail.com") {
+        if (req.body.email === "manager@gmail.com") {
             // return res.redirect(`/dashboard/email=${req.body.email}`);
             // var query = querystring.stringify(passportUser);
             // req.session.message = passportUser;
             // res.redirect('/dashboard');
-            return res.redirect('/ticket');
+            return res.redirect('/tenant_manager');
         } else {
             req.session.message = passportUser;
             // console.log("ELSE");
